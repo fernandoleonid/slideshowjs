@@ -69,3 +69,37 @@
 #next{
 	border-radius: 0px var(--pattern-border-radius) var(--pattern-border-radius) 0px;
 }
+
+.indicators {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top:75%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.indicators span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.indicators span:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 3px black;
+}
+
+.indicators .selected {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 3px black;
+}
